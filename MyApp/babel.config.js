@@ -5,6 +5,9 @@ module.exports = {
       'module-resolver',
       {
         root: ['./'],
+        alias: {
+          'app-info-package': '../app-info-package',
+        },
         extensions: [
           '.ios.js',
           '.ios.ts',
