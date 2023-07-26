@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native/scripts/react_native_pods.rb b/node_modules/react-native/scripts/react_native_pods.rb
+index 653385e..7884ada 100644
+--- a/node_modules/react-native/scripts/react_native_pods.rb
++++ b/node_modules/react-native/scripts/react_native_pods.rb
+@@ -38,7 +38,7 @@ require Pod::Executable.execute_command('node', ['-p',
+ # By using this function, you won't have to manually change your Podfile
+ # when we change the minimum version supported by the framework.
+ def min_ios_version_supported
+-  return '12.4'
++  return '13.0'
+ end
+ 
+ # This function prepares the project for React Native, before processing
