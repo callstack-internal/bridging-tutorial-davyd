@@ -1,4 +1,4 @@
-package com.myapp;
+package com.callstack.bridgingtutorial;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
