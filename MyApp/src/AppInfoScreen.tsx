@@ -1,7 +1,8 @@
-import {AppInfoModule} from './src/tmp';
 import type {FC} from 'react';
 import React, {useState} from 'react';
 import {Button, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+
+import {AppInfoModule} from 'app-info-package';
 
 export const AppInfoScreen: FC = () => {
   const [appBuildNumber, setAppBuildNumber] = useState<string | null>(null);
@@ -75,5 +76,3 @@ const styles = StyleSheet.create({
     padding: 8,
   },
 });
-
-export default AppInfoScreen;
