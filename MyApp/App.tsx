@@ -1,4 +1,4 @@
-import {AppInfoModule} from 'app-info-package';
+import {AppInfoModule} from './src/tmp';
 import type {FC} from 'react';
 import React, {useState} from 'react';
 import {Button, SafeAreaView, StyleSheet, Text, View} from 'react-native';
