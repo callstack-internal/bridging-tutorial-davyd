@@ -6,7 +6,7 @@ module.exports = {
       {
         root: ['./'],
         alias: {
-          'app-info-package': '../app-info-package',
+          'app-info-package': ['../app-info-package'],
         },
         extensions: [
           '.ios.js',
