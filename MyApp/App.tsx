@@ -1,7 +1,7 @@
 import {View} from 'react-native';
-import {a} from 'app-info-package';
+import {AppInfoModule} from 'app-info-package';
 
-console.log(' --- xdebug', {a});
+console.log(' --- xdebug', {...AppInfoModule});
 
 export default function App() {
   return <View />;

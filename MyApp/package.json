@@ -10,6 +10,7 @@
     "test": "jest",
     "codegen-android": "./android/gradlew -p android generateCodegenArtifactsFromSchema",
     "codegen-ios": "node node_modules/react-native/scripts/generate-codegen-artifacts.js --path . --outputPath ./ios",
+    "codegen": "yarn codegen-android && yarn codegen-ios",
     "postinstall": "patch-package --error-on-fail"
   },
   "dependencies": {
