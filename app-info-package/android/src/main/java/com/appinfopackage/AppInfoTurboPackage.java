@@ -20,6 +20,9 @@ public class AppInfoTurboPackage extends TurboReactPackage {
     @Override
     @Nullable
     public NativeModule getModule(String name, ReactApplicationContext reactContext) {
+        if (name.equals(AppInfoModule.NAME)) {
+            return new AppInfoModule(reactContext);
+        }
         return null;
     }
 
@@ -32,6 +35,7 @@ public class AppInfoTurboPackage extends TurboReactPackage {
          * Here declare the array of exported modules
          */
         Class<? extends NativeModule>[] moduleList = new Class[] {
+                AppInfoModule.class
         };
         final Map<String, ReactModuleInfo> reactModuleInfoMap = new HashMap<>();
         /**
