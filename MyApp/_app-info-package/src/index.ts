@@ -1,1 +1,1 @@
-export { default as AppInfoModule } from "./NativeAppInfoModule";
+export {default as AppInfoModule} from './NativeAppInfoModule';
