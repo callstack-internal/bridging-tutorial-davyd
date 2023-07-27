@@ -6,7 +6,8 @@ module.exports = {
       {
         root: ['./'],
         alias: {
-          'app-info-package': ['./app-info-package'],
+          'app-info-package': ['./_app-info-package'],
+          'conic-gradient-package': ['./_conic-gradient-package'],
         },
         extensions: [
           '.ios.js',
