@@ -8,5 +8,8 @@ module.exports = {
     'conic-gradient-package': {
       root: path.resolve(__dirname, './_conic-gradient-package'),
     },
+    'save-file-picker-package': {
+      root: path.resolve(__dirname, './_save-file-picker-package'),
+    },
   },
 };

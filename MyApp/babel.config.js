@@ -8,6 +8,7 @@ module.exports = {
         alias: {
           'app-info-package': ['./_app-info-package'],
           'conic-gradient-package': ['./_conic-gradient-package'],
+          'save-file-picker-package': ['./_save-file-picker-package'],
         },
         extensions: [
           '.ios.js',
