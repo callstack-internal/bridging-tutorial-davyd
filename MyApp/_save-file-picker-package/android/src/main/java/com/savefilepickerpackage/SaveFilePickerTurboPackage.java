@@ -20,6 +20,9 @@ public class SaveFilePickerTurboPackage extends TurboReactPackage {
     @Override
     @Nullable
     public NativeModule getModule(String name, ReactApplicationContext reactContext) {
+        if (name.equals(SaveFilePickerModule.NAME)) {
+            return new SaveFilePickerModule(reactContext);
+        }
         return null;
     }
 
@@ -32,6 +35,7 @@ public class SaveFilePickerTurboPackage extends TurboReactPackage {
          * Here declare the array of exported modules
          */
         Class<? extends NativeModule>[] moduleList = new Class[] {
+            SaveFilePickerModule.class
         };
         final Map<String, ReactModuleInfo> reactModuleInfoMap = new HashMap<>();
         /**

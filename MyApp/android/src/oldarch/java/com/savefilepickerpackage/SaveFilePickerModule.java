@@ -6,6 +6,8 @@ import androidx.annotation.Nullable;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.WritableMap;
@@ -16,14 +18,14 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 /**
- * Declare Java class for new arch native module implementation
+ * Declare Java class for old arch native module implementation
  *
- * Each turbo module extends codegenerated spec class
+ * Each native module extends ReactContextBaseJavaModule class
  *
  * Class should be annotated with @ReactModule decorator
  */
 @ReactModule(name = SaveFilePickerModule.NAME)
-public class SaveFilePickerModule extends NativeSaveFilePickerModuleSpec {
+public class SaveFilePickerModule extends ReactContextBaseJavaModule {
     public static final String NAME = SaveFilePickerModuleImpl.NAME;
 
     // Use shared module implementation and forward react application context
@@ -41,13 +43,13 @@ public class SaveFilePickerModule extends NativeSaveFilePickerModuleSpec {
             public void onSuccess(@Nullable Uri uri) {
                 try {
                     InputStream sourceInputStream = reactContext
-                            .getApplicationContext()
-                            .getAssets()
-                            .open(sourceFilename);
+                        .getApplicationContext()
+                        .getAssets()
+                        .open(sourceFilename);
                     if (uri != null) {
                         OutputStream outputStream = reactContext
-                                .getContentResolver()
-                                .openOutputStream(uri);
+                            .getContentResolver()
+                            .openOutputStream(uri);
                         byte[] buffer = new byte[8 * 1024];
                         int bytes = sourceInputStream.read(buffer);
                         while (bytes >= 0) {
@@ -126,16 +128,16 @@ public class SaveFilePickerModule extends NativeSaveFilePickerModuleSpec {
         return SaveFilePickerModuleImpl.NAME;
     }
 
-    // Exported methods are overriden - based on the spec class
+    // Exported methods must be annotated with @ReactMethod decorator
 
-    @Override
+    @ReactMethod
     public void saveFileWithCallback(String filename, Callback callback) {
         callbackBlock = callback;
         sourceFilename = filename;
         moduleImpl.saveFile(filename);
     }
 
-    @Override
+    @ReactMethod
     public void saveFileWithPromise(String filename, Promise promise) {
         promiseBlock = promise;
         sourceFilename = filename;
