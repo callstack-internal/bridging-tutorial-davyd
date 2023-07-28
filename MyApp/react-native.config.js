@@ -11,5 +11,8 @@ module.exports = {
     'save-file-picker-package': {
       root: path.resolve(__dirname, './_save-file-picker-package'),
     },
+    'react-native-detect-maestro': {
+      root: path.resolve(__dirname, './_is_maestro'),
+    },
   },
 };

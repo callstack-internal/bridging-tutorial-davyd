@@ -9,6 +9,7 @@ module.exports = {
           'app-info-package': ['./_app-info-package'],
           'conic-gradient-package': ['./_conic-gradient-package'],
           'save-file-picker-package': ['./_save-file-picker-package'],
+          'react-native-detect-maestro': ['./_is_maestro'],
         },
         extensions: [
           '.ios.js',

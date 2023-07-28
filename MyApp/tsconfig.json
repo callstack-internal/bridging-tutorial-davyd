@@ -10,7 +10,10 @@
       ],
       "save-file-picker-package": [
         "./_save-file-picker-package"
-      ]
+      ],
+      "react-native-detect-maestro": [
+        "./_is_maestro"
+      ],
     }
   }
 }
