@@ -5,4 +5,4 @@ export interface Spec extends TurboModule {
   isMaestro(): boolean;
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>('DetectMaestro');
+export default TurboModuleRegistry.getEnforcing<Spec>('DetectMaestroModule');
