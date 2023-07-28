@@ -14,6 +14,6 @@ class DetectMaestroModuleImpl(private val reactContext: ReactApplicationContext)
     }
 
     companion object {
-        const val NAME = "DetectMaestro"
+        const val NAME = "DetectMaestroModule"
     }
 }
