@@ -14,5 +14,8 @@ module.exports = {
     'react-native-detect-maestro': {
       root: path.resolve(__dirname, './_is_maestro'),
     },
+    'screen-orientation-package': {
+      root: path.resolve(__dirname, './_screen-orientation-package'),
+    },
   },
 };
