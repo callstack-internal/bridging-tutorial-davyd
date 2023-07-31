@@ -1062,6 +1062,22 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
+  - ScreenOrientationPackage (0.0.1):
+    - hermes-engine
+    - RCT-Folly (= 2021.07.22.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-graphics
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-utils
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
 
@@ -1114,6 +1130,7 @@ DEPENDENCIES:
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - SaveFilePickerPackage (from `../_save-file-picker-package`)
+  - ScreenOrientationPackage (from `../_screen-orientation-package`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -1214,6 +1231,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   SaveFilePickerPackage:
     :path: "../_save-file-picker-package"
+  ScreenOrientationPackage:
+    :path: "../_screen-orientation-package"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -1265,6 +1284,7 @@ SPEC CHECKSUMS:
   React-utils: 99246a95ac79ecb709750bd77ea18d0b811f675e
   ReactCommon: 3ccb8fb14e6b3277e38c73b0ff5e4a1b8db017a9
   SaveFilePickerPackage: f36526f9e501270417aeff3b6381e8bde16dd37b
+  ScreenOrientationPackage: 0785d5e07fda5519e5ba4d2410dc25ff9f446a38
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 8796b55dba14d7004f980b54bcc9833ee45b28ce
 
