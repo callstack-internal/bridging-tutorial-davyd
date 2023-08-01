@@ -7,6 +7,7 @@ import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
 import com.savefilepickerpackage.SaveFilePickerModuleImpl;
+import com.retyui.widgetpicker.WidgetPickerModuleImpl;
 
 public class MainActivity extends ReactActivity {
 
@@ -22,7 +23,8 @@ public class MainActivity extends ReactActivity {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    SaveFilePickerModuleImpl.registerActivityLauncher(this); // add this line
+      SaveFilePickerModuleImpl.registerActivityLauncher(this); // add this line
+      WidgetPickerModuleImpl.registerWidgetClass("MyAppWidget", MyAppWidget.class); // add this line
   }
   /**
    * Returns the instance of the {@link ReactActivityDelegate}. Here we use a util class {@link

@@ -10,7 +10,8 @@ module.exports = {
           'conic-gradient-package': ['./_conic-gradient-package'],
           'save-file-picker-package': ['./_save-file-picker-package'],
           'react-native-detect-maestro': ['./_is_maestro'],
-          'screen-orientation-package': './_screen-orientation-package',
+          'screen-orientation-package': ['./_screen-orientation-package'],
+          'react-native-widget-picker': ['./_widget-picker'],
         },
         extensions: [
           '.ios.js',

@@ -17,5 +17,8 @@ module.exports = {
     'screen-orientation-package': {
       root: path.resolve(__dirname, './_screen-orientation-package'),
     },
+    'react-native-widget-picker': {
+      root: path.resolve(__dirname, './_widget-picker'),
+    },
   },
 };
