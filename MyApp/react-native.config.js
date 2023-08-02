@@ -20,5 +20,8 @@ module.exports = {
     'react-native-widget-picker': {
       root: path.resolve(__dirname, './_widget-picker'),
     },
+    'range-slider-package': {
+      root: path.resolve(__dirname, './_range-slider-package'),
+    },
   },
 };

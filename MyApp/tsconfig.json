@@ -19,6 +19,9 @@
       ],
       "react-native-widget-picker": [
         "./_widget-picker"
+      ],
+      "range-slider-package": [
+        "./_range-slider-package"
       ]
     }
   }
