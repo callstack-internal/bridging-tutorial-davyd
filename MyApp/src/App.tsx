@@ -3,8 +3,5 @@
 // export {SaveFileScreen as default} from './SaveFileScreen';
 // export {DetectMaestroScreen as default} from './DetectMaestroScreen';
 // export {ScreenOrientationScreen as default} from './ScreenOrientationScreen';
-export {WidgetPickerScreen as default} from './WidgetPickerScreen';
-
-console.log({
-  'typeof Array.prototype.with': typeof Array.prototype.with,
-});
+// export {WidgetPickerScreen as default} from './WidgetPickerScreen';
+export {RangeSliderScreen as default} from './RangeSliderScreen';
